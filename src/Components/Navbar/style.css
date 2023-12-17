@@ -10,3 +10,59 @@ header {
     text-decoration: none;
     margin-right: 10px;
   }
+  .imageStyle{
+    /* // Membuat gambar mengisi lebar kontainer */
+    width: "100%"; 
+    /* // Menjaga rasio aspek gambar */
+    height: "auto"; 
+/* // Menjamin bahwa elemen img adalah elemen blok */
+    display: "block"; 
+  }
+  .containerStyle{
+    position: "relative";
+    text-align: "center";
+    color: "white";
+  }
+  /* .contentStyle{
+    position: "absolute";
+    top: "50%";
+    left: "50%";
+    transform: "translate(-50%, -50%)";
+    z-index: 1;
+  } */
+
+  /* style.css */
+
+.containerStyle {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.imageStyle {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.contentStyle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+/* You can add more specific styles for the links inside contentStyle */
+.contentStyle a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Add more specific styles for hover or any other states if needed */
+.contentStyle a:hover {
+  color: black; /* Change the color on hover as an example */
+}
