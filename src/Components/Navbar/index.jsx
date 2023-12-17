@@ -5,20 +5,47 @@ import background from "../../assets/jolt-landing-page-bg.png";
 
 const Navbar = () => {
   return (
-    <div className="containerStyle">
-      <img className="imageStyle" src={background} alt="" />
-      <div className="contentStyle">
-        <a href="">Jolt</a>
-        <a href="">Categories</a>
-        <a href="">Collections</a>
-        <a href="">Store</a>
-        <a href="">Blog</a>
-        <a href="">Find Store</a>
-
-        <a href="">Search</a>
-        <a href="">Car</a>
-        <a href="">Login</a>
+    <div className="container">
+      <div className="container-navbar">
+        <div className="container-left">
+          <a href="#" className="jolt">
+            Jolt
+          </a>
+          <a href="#" className="components">
+            Components
+          </a>
+          <a href="#" className="collections">
+            collections
+          </a>
+          <a href="#" className="store">
+            Store
+          </a>
+          <a href="#" className="blog">
+            Blog
+          </a>
+          <a href="#" className="find">
+            Find Store
+          </a>
+        </div>
+        <div className="menu-btn">
+          <div className="navigation">
+            <div className="container-right">
+              <a href="#" className="search">
+                Search
+              </a>
+              <a href="#" className="car">
+                Car
+              </a>
+              <a href="#" className="login">
+                Login
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
+      <section className="background">
+        <img src={background} />
+      </section>
     </div>
   );
 };
